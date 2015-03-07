@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/editOperand1"
             android:layout_column="11"
             android:layout_marginTop="40dp" />
 
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/editText2"
+            android:id="@+id/editOperand2"
             android:layout_column="11"
             android:layout_marginTop="10dp"/>
 
@@ -38,36 +38,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#fffff6fe"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
-            android:id="@+id/button"
+            android:id="@+id/btnPlus"
             android:layout_column="4" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-"
-            android:id="@+id/button2"
-            android:layout_column="7" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="*"
-            android:id="@+id/button3"
-            android:layout_column="10" />
+            android:id="@+id/btnMultiply"
+            android:layout_column="6" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
-            android:id="@+id/button4"
-            android:layout_column="11" />
+            android:id="@+id/btnDivide"
+            android:layout_column="8" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ca"
+            android:id="@+id/btnClear"
+            android:layout_column="10" />
     </TableRow>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Result"
+            android:id="@+id/textView2"
+            android:layout_column="4"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editResult"
+            android:layout_column="4"
+            android:gravity="center"
+            android:text="0.00"
+            android:layout_marginTop="15dp"
+            android:background="@null"/>
 </TableLayout>
